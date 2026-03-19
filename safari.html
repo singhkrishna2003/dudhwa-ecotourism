@@ -7,9 +7,15 @@
 
   <title>Safari Options in Dudhwa National Park | Jeep & Elephant Safari</title>
 
-  <meta name="description"
-    content="Choose from Jeep Safari and Elephant Safari options in Dudhwa National Park. Timings, pricing, tips and best experiences." />
+  <meta
+    name="description"
+    content="Choose from Jeep Safari and Elephant Safari options in Dudhwa National Park. Timings, pricing, tips and best experiences."
+  />
 
+  <!-- Preload important hero image -->
+  <link rel="preload" as="image" href="assets/safari_options.png" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -21,7 +27,13 @@
       <span class="pill-mini">
         <span class="dot"></span> Safari Options
       </span>
-      <button id="themeToggle" class="theme-toggle" title="Toggle theme">
+      <button
+        id="themeToggle"
+        class="theme-toggle"
+        title="Toggle theme"
+        aria-label="Toggle theme"
+        type="button"
+      >
         🌙
       </button>
     </div>
@@ -32,22 +44,47 @@
     <div class="container nav-wrap">
 
       <!-- Brand -->
-      <a class="brand" href="index.html">
-        <img src="assets/Animal-Logo.png" alt="Dudhwa National Park Logo" class="logo">
-        <img src="assets/dudhwaNational-logo.png" alt="Dudhwa National Park Logo" class="logo1">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <img
+          src="assets/Animal-Logo.png"
+          alt="Animal logo"
+          class="logo"
+          width="120"
+          height="120"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <img
+          src="assets/dudhwaNational-logo.png"
+          alt="Dudhwa National Park logo"
+          class="logo1"
+          width="220"
+          height="90"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
       </a>
 
       <!-- Navigation -->
-      <nav class="nav" id="nav">
-        <a href="index.html" class="active">Home</a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="safari-zones.html">Safari Zones</a>
-        <a href="safari.html">Safari Options</a>
+        <a href="safari.html" class="active" aria-current="page">Safari Options</a>
         <a href="visit.html">Visiting Info</a>
 
         <!-- Desktop dropdown only -->
         <div class="nav-dropdown">
-          <button class="nav-drop-btn">More <i class="fa-solid fa-caret-down"></i></button>
+          <button
+            class="nav-drop-btn"
+            type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            More <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+          </button>
           <div class="nav-drop-menu">
             <a href="how-to-reach.html">How To Reach</a>
             <a href="hotels.html">Accommodation</a>
@@ -64,7 +101,14 @@
       </nav>
 
       <!-- Mobile toggle -->
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle menu"
+        aria-controls="nav"
+        aria-expanded="false"
+        type="button"
+      >
         <span></span><span></span><span></span>
       </button>
 
@@ -72,7 +116,11 @@
   </header>
 
   <!-- ================= HERO ================= -->
-  <section class="hero has-image" style="--hero-image:url('assets/safari_options.png')">
+  <section
+    class="hero has-image"
+    style="--hero-image:url('assets/safari_options.png')"
+    aria-label="Safari options hero section"
+  >
     <div class="hero-bg"></div>
     <div class="container hero-inner">
       <p class="hero-kicker">🚙 Jeep • 🐘 Elephant • Adventure</p>
@@ -92,12 +140,19 @@
       <div class="cards">
 
         <!-- Jeep Safari -->
-        <div class="card safari-card">
-
-          <img src="assets/jeep-safari.jpg" alt="Jeep Safari" class="safari-img" loading="lazy" width="600" height="400">
+        <article class="card safari-card">
+          <img
+            src="assets/jeep-safari.jpg"
+            alt="Jeep Safari in Dudhwa National Park"
+            class="safari-img"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="400"
+          />
 
           <div class="safari-content">
-            <h3>🚙 Jeep Safari (Most Popular)</h3>
+            <h2>🚙 Jeep Safari (Most Popular)</h2>
 
             <p class="muted"><strong>Duration:</strong> 3–4 hours</p>
             <p class="muted"><strong>Capacity:</strong> Maximum 6 persons per jeep</p>
@@ -119,15 +174,22 @@
               <strong>Best For:</strong> Families, wildlife photography
             </p>
           </div>
-        </div>
+        </article>
 
         <!-- Elephant Safari -->
-        <div class="card safari-card">
-
-          <img src="assets/elephant-safari.JPG" alt="Elephant Safari" class="safari-img">
+        <article class="card safari-card">
+          <img
+            src="assets/elephant-safari.JPG"
+            alt="Elephant Safari in Dudhwa National Park"
+            class="safari-img"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="400"
+          />
 
           <div class="safari-content">
-            <h3>🐘 Elephant Safari</h3>
+            <h2>🐘 Elephant Safari</h2>
 
             <p class="muted"><strong>Duration:</strong> 1.5–2 hours</p>
             <p class="muted"><strong>Availability:</strong> Morning (7–9 AM)</p>
@@ -148,7 +210,7 @@
               <strong>Best For:</strong> Rhino viewing, close encounters
             </p>
           </div>
-        </div>
+        </article>
 
       </div>
 
@@ -164,13 +226,10 @@
       </div>
 
       <ol class="muted" style="padding-left:18px; line-height:1.8">
-        <li><strong>Book in Advance:</strong> Safaris fill quickly during peak season (December–January). Book 7–15 days
-          ahead.</li>
+        <li><strong>Book in Advance:</strong> Safaris fill quickly during peak season (December–January). Book 7–15 days ahead.</li>
         <li><strong>Morning vs Evening:</strong> Morning safaris offer better sightings and cooler temperatures.</li>
-        <li><strong>Choose Multiple Zones:</strong> Plan safaris across 2–3 zones for comprehensive wildlife viewing.
-        </li>
-        <li><strong>Private vs Shared:</strong> Private jeeps offer flexibility; shared safaris are budget-friendly.
-        </li>
+        <li><strong>Choose Multiple Zones:</strong> Plan safaris across 2–3 zones for comprehensive wildlife viewing.</li>
+        <li><strong>Private vs Shared:</strong> Private jeeps offer flexibility; shared safaris are budget-friendly.</li>
         <li><strong>Weather Considerations:</strong> Overcast days can extend animal activity beyond morning hours.</li>
       </ol>
 
@@ -184,9 +243,10 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/cc53f7384b.js" crossorigin="anonymous"></script>
-  <script src="theme.js"></script>
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/cc53f7384b.js" crossorigin="anonymous" defer></script>
+  <script src="theme.js" defer></script>
 </body>
 
 </html>
