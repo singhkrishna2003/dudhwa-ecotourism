@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Dudhwa National Park | Official Wildlife & Safari Guide</title>
+    <title>Dudhwa National Park Gallery | Wildlife, Safari & Nature Photos</title>
 
     <meta name="description"
-        content="Discover the untamed beauty of Dudhwa National Park – home to tigers, rhinos, elephants and 450+ bird species." />
+        content="Explore the Dudhwa National Park gallery featuring wildlife, safari, forests, wetlands, birds, rhinos, tigers, elephants and scenic views." />
 
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,7 +21,7 @@
                 <span class="dot"></span> Gallery
             </span>
 
-            <button id="themeToggle" class="theme-toggle" title="Toggle theme">
+            <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme" type="button">
                 🌙
             </button>
         </div>
@@ -31,15 +31,32 @@
     <header class="header">
         <div class="container nav-wrap">
             <!-- Brand -->
-            <a class="brand" href="index.html">
+            <a class="brand" href="index.html" aria-label="Go to homepage">
+                <img
+                    src="assets/Animal-Logo.png"
+                    alt="Animal logo"
+                    class="logo"
+                    width="120"
+                    height="120"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                />
 
-                <img src="assets/Animal-Logo.png" alt="Dudhwa National Park Logo" class="logo">
-
-                <img src="assets/dudhwaNational-logo.png" alt="Dudhwa National Park Logo" class="logo1">
+                <img
+                    src="assets/dudhwaNational-logo.png"
+                    alt="Dudhwa National Park logo"
+                    class="logo1"
+                    width="220"
+                    height="90"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                />
             </a>
 
             <!-- Navigation -->
-            <nav class="nav" id="nav">
+            <nav class="nav" id="nav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="safari-zones.html">Safari Zones</a>
@@ -48,11 +65,13 @@
 
                 <!-- Desktop dropdown only -->
                 <div class="nav-dropdown">
-                    <button class="nav-drop-btn">More <i class="fa-solid fa-caret-down"></i></button>
+                    <button class="nav-drop-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                        More <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                    </button>
                     <div class="nav-drop-menu">
                         <a href="how-to-reach.html">How To Reach</a>
                         <a href="hotels.html">Accommodation</a>
-                        <a href="gallery.html">Gallery</a>
+                        <a href="gallery.html" class="active" aria-current="page">Gallery</a>
                         <a href="contact.html" class="nav-cta">Contact & Booking</a>
                     </div>
                 </div>
@@ -60,178 +79,170 @@
                 <!-- Mobile direct links -->
                 <a href="how-to-reach.html" class="mobile-only-link">How To Reach</a>
                 <a href="hotels.html" class="mobile-only-link">Accommodation</a>
-                <a href="gallery.html" class="mobile-only-link">Gallery</a>
+                <a href="gallery.html" class="mobile-only-link active" aria-current="page">Gallery</a>
                 <a href="contact.html" class="nav-cta mobile-only-link">Contact & Booking</a>
             </nav>
 
             <!-- Mobile toggle -->
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+            <button
+                class="nav-toggle"
+                id="navToggle"
+                aria-label="Toggle menu"
+                aria-controls="nav"
+                aria-expanded="false"
+                type="button"
+            >
                 <span></span><span></span><span></span>
             </button>
-
         </div>
     </header>
 
     <!-- ================= GALLERY SECTION ================= -->
-    <section class="section gallery-section">
-        <div class="container">
-            <div class="section-head gallery-head">
-                <h2>Gallery of Dudhwa National Park</h2>
-                <p class="muted">
-                    Explore the wild beauty of Dudhwa through forests, safaris, wetlands,
-                    wildlife, and unforgettable jungle moments.
-                </p>
-            </div>
-
-            <div class="gallery-grid">
-                <div class="gallery-item large">
-                    <img src="assets/gallery/IMG1-EntranceGate.jpg" alt="EntranceGate">
+    <main>
+        <section class="section gallery-section">
+            <div class="container">
+                <div class="section-head gallery-head">
+                    <h1>Gallery of Dudhwa National Park</h1>
+                    <p class="muted">
+                        Explore the wild beauty of Dudhwa through forests, safaris, wetlands,
+                        wildlife, and unforgettable jungle moments.
+                    </p>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG2-Elephant.jpg" alt="Elephant">
+                <div class="gallery-grid">
 
-                </div>
+                    <div class="gallery-item large">
+                        <img src="assets/gallery/IMG1-EntranceGate.jpg" alt="Entrance gate of Dudhwa National Park" loading="eager" decoding="async" fetchpriority="high" width="800" height="600">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG3-TrigerCube.jpg" alt="TrigerCube">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG2-Elephant.jpg" alt="Elephant in Dudhwa National Park" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG3-TrigerCube.jpg" alt="Tiger cub in Dudhwa National Park" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG4-Bear.JPG" alt="Bear">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG4-Bear.JPG" alt="Bear in the forest" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG5-Rino.jpg" alt="One-horned rhinoceros" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG5-Rino.jpg" alt="Rhinoceros">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG6-Owl.jpg" alt="Owl perched in the wild" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG7-Deer.jpg" alt="Deer in Dudhwa grassland" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG6-Owl.jpg" alt="Owl">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG8-ElephantGrp.jpg" alt="Group of elephants" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG9-Peacock.JPG" alt="Peacock in Dudhwa National Park" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG7-Deer.jpg" alt="Deer">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG10-View.jpg" alt="Scenic view of Dudhwa landscape" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG11-Tiger.jpg" alt="Tiger in Dudhwa National Park" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG8-ElephantGrp.jpg" alt="Group of elephants">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG12-Monkey.jpg" alt="Monkey on a tree branch" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG13-Tiger.JPG" alt="Tiger walking through the forest" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG9-Peacock.JPG" alt="Peacock ">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG14-BabyElephant.JPG" alt="Baby elephant in the wild" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG15-Eagle.jpg" alt="Eagle in Dudhwa National Park" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG10-View.jpg" alt="Scenic view">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG16-BearOnRoad.jpg" alt="Bear crossing a forest road" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG17-AntHouse.jpg" alt="Anthill in the forest" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG11-Tiger.jpg" alt="Tiger">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG18-TigerInDudhwa.jpg" alt="Tiger sighting in Dudhwa" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG19-DudhwaWaterBoady.jpg" alt="Water body inside Dudhwa National Park" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG12-Monkey.jpg" alt="Monkey">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG20-BabyBear.jpg" alt="Baby bear in the wild" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG21-Rino.jpg" alt="Rhinoceros in grassland" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG13-Tiger.JPG" alt="Tiger">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG22-WhiteBird.jpg" alt="White bird near wetland" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG23-BarahaSingha.jpg" alt="Barasingha deer in Dudhwa" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG14-BabyElephant.JPG" alt="Baby elephant">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG24-Crocodile.JPG" alt="Crocodile resting near water" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG25-Rino.jpg" alt="Rhinoceros near the safari route" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG15-Eagle.jpg" alt="Eagle">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG26-Eagle.jpg" alt="Eagle perched in the forest" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG27-View.jpg" alt="Forest landscape view" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG16-BearOnRoad.jpg" alt="Bear on road">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG28-Frog.jpg" alt="Frog in natural habitat" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG29-ForestCat.jpg" alt="Forest cat in Dudhwa National Park" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG17-AntHouse.jpg" alt="Ant house">
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG30-Elephant.jpg" alt="Elephant walking through the forest" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery/IMG31-Elephant.jpg" alt="Elephant in safari area" loading="lazy" decoding="async" width="600" height="400">
+                    </div>
 
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG18-TigerInDudhwa.jpg" alt="Tiger">
-
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG19-DudhwaWaterBoady.jpg" alt="Water body">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG20-BabyBear.jpg" alt="Baby bear">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG21-Rino.jpg" alt="Rhinoceros">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG22-WhiteBird.jpg" alt="White bird">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG23-BarahaSingha.jpg" alt="Baraha Singha">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG24-Crocodile.JPG" alt="Crocodile">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG25-Rino.jpg" alt="Rhinoceros">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG26-Eagle.jpg" alt="Eagle">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG27-View.jpg" alt="Scenic view">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG28-Frog.jpg" alt="Frog">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG29-ForestCat.jpg" alt="Forest cat">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG30-Elephant.jpg" alt="Elephant">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="assets/gallery/IMG31-Elephant.jpg" alt="Elephant">
-                </div>
-
-                <div class="gallery-item large">
-                    <img src="assets/gallery/IMG32-TigerNearSafari.jpg" alt="Tiger">
+                    <div class="gallery-item large">
+                        <img src="assets/gallery/IMG32-TigerNearSafari.jpg" alt="Tiger seen near safari vehicle" loading="lazy" decoding="async" width="800" height="600">
+                    </div>
 
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
@@ -240,9 +251,9 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/cc53f7384b.js" crossorigin="anonymous"></script>
-    <script src="theme.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/cc53f7384b.js" crossorigin="anonymous" defer></script>
+    <script src="theme.js" defer></script>
 </body>
 
 </html>
