@@ -109,57 +109,62 @@
   </section>
 
   <!-- ================= FORM ================= -->
-  <div class="form-wrap">
-    <form class="booking-form" onsubmit="
+    <div class="form-wrap">
+      <form
+        class="booking-form"
+        onsubmit="
           sendToWhatsApp();
           return false;
-        ">
-      <h2>Contact & Booking Form</h2>
+        "
+      >
+        <h2>Contact & Booking Form</h2>
 
-      <div class="form-group">
-        <label>Name *</label>
-        <input type="text" id="name" required />
-      </div>
-
-      <div class="form-group">
-        <label>Contact Number *</label>
-        <input type="tel" id="phone" required />
-      </div>
-
-      <div class="form-group">
-        <label>Age</label>
-        <input type="number" id="age" />
-      </div>
-
-      <div class="form-row">
         <div class="form-group">
-          <label>Total Adults</label>
-          <input type="number" id="adults" />
+          <label>Name *</label>
+          <input type="text" id="name" required />
         </div>
+
         <div class="form-group">
-          <label>Total Children</label>
-          <input type="number" id="children" />
+          <label>Contact Number *</label>
+          <input type="tel" id="phone" required />
         </div>
-      </div>
 
-      <div class="form-group">
-        <label>Nationality</label>
-        <input type="text" id="nationality" />
-      </div>
+        <div class="form-group">
+          <label>Age</label>
+          <input type="number" id="age" />
+        </div>
 
-      <div class="form-group">
-        <label>Select Date *</label>
-        <input type="date" id="date" required />
-      </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Number of Person</label>
+            <input type="number" id="adults" />
+          </div>
+          <!--<div class="form-group">
+            <label>Total Children</label>
+            <input type="number" id="children" />
+          </div>-->
+          
+        </div>
 
-      <div class="form-group">
-        <label>Your Requirement / Message</label>
-        <textarea id="message"></textarea>
-      </div>
+        <div class="form-group">
+          <label>Nationality</label>
+          <input type="text" id="nationality" />
+        </div>
 
-      <button type="submit" class="submit-btn">Proceed Now</button>
-    </form>
-  </div>
+        <!-- <div class="form-group">
+          <label>Select Date *</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Your Requirement / Message</label>
+          <textarea id="message"></textarea>
+        </div> -->
+        
+
+        <button type="submit" class="submit-btn">Proceed Now</button>
+      </form>
+    </div>
 
   <!-- ================= SAFETY ================= -->
   <section class="section alt">
