@@ -24,10 +24,10 @@ function sendToWhatsApp() {
         "\uD83C\uDF82 Age: " + (age || "N/A") + "\n" +
         "\uD83D\uDC6A Number of Persons: " + (adults || "N/A") + "\n" +
         //"\uD83D\uDC76 Children: " + (children || "N/A") + "\n" +
-        "\uD83C\uDF0D Nationality: " + (nationality || "N/A") + "\n" +
+        "\uD83C\uDF0D Nationality: " + (nationality || "N/A") + "\n" ;
+        //+
        // "\uD83D\uDCC5 Date: " + date + "\n\n" +
-       // "\uD83D\uDCDD Message:\n" +
-     (message || "No additional message");
+       // "\uD83D\uDCDD Message:\n" + (message || "No additional message")
 
     var whatsappNumber = "919559829836"; // ✅ Your number
 
