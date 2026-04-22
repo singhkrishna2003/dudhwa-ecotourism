@@ -10,10 +10,17 @@ function sendToWhatsApp() {
    // var date = document.getElementById("date").value;
     //var message = document.getElementById("message").value.trim();
 
+    if (!name || !phone ) {
+        alert("Please fill all required fields");
+        return;
+    }
+
+    /*
     if (!name || !phone || !date) {
         alert("Please fill all required fields");
         return;
     }
+    */
 
     /* ✅ Emoji-safe WhatsApp message (Unicode) */
     var whatsappMessage =
